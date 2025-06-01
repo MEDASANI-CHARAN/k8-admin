@@ -15,12 +15,12 @@ apiVersion: rbac.authorization.k8s.io/v1
 # You need to already have a Role named "pod-reader" in that namespace.
 kind: RoleBinding
 metadata:
-  name: expense-read-pods
+  name: expense-pod-reader1
   namespace: expense
 subjects:
 # You can specify more than one "subject"
 - kind: User
-  name: ram # "name" is case sensitive
+  name: harish # "name" is case sensitive
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   # "roleRef" specifies the binding to a Role / ClusterRole
